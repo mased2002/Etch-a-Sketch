@@ -1,0 +1,77 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title-div{
+    text-align: center;
+
+}
+.title-div > button{
+    margin-right: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+.title{
+    font-size: 35px;
+    text-shadow: 2px 2px #908989;
+    margin-bottom: 25px;
+}
+/* grid container */
+.board{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    border: 1px solid slateblue;
+    margin-bottom: 25px;
+}
+.control-inner{
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.control-inner > h4{
+    padding-right: 3px;
+}
+#cur{
+    padding: 1% 8px 0;
+    
+}
+#submit{
+    min-height: 0px;
+    flex-shrink: 0;
+    background-color: blue;
+}
+.colored{
+    background-color: black;
+}
+.rouge{
+    background-color: red;
+}
+.vert{
+    background-color: green;
+}
+.blanche{
+    background-color: white;
+}
+.orange{
+    background-color: orange;
+}
+.indingo{
+    background-color: indigo;
+}
+.blue{
+    background-color: blue;
+}
+.violet{
+    background-color: violet;
+}
+button{
+    border-radius: 5px;
+    padding: 10px;
+}

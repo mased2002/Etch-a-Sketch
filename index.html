@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etch-a-sketch</title>
+    <link rel="stylesheet" href="etch.css">
+    <script src="etch.js" defer></script>
+</head>
+<body>
+    <div class="title-div">
+        <h1 class="title">Etch-a-Sketch</h1>
+        <button onclick="chngcl('colored')">black</button>
+        <button class="red" onclick="chngcl('rouge')">Red</button>
+        <button onclick="chngcl('rainbow')">rainbow</button>
+        <button onclick="chngcl('vert')">green</button>
+        <button class="clear">clear</button>
+        <button class="eraser" onclick="chngcl('blanche')">Eraser</button>
+    </div>
+    <div class="control-inner">
+        <h4>Range: </h4>
+        <p id="cur"></p>
+        <input type="range" id="slider" min="2" max="64" oninput="get()" value="16">
+        <button id="submit" onclick="createGrid()">Apply</button>
+    </div>
+
+    <div class="board">
+
+    </div>
+    <button id="restart">Reset</button>
+</body>
+</html>
